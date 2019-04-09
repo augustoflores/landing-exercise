@@ -1,0 +1,65 @@
+header {}
+
+nav {}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    border-bottom: rgba(255, 255, 255, .1) solid 1px;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar-light a.nav-link {
+    color: gray !important;
+}
+
+header .navbar-nav li.nav-item {
+    padding: 20px;
+}
+
+header .navbar-nav li.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .carousel-inner .btn-dark {
+    background-color: unset;
+}
+
+header .carousel-inner .btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+header .navbar-dark .darklogo {
+    display: none;
+}
+
+header .bg-white .darklogo {
+    display: block;
+}
+
+header .navbar-dark .whitelogo {
+    display: block;
+}
+
+header .bg-white .whitelogo {
+    display: none;
+}
+
+#cards {
+    padding-top: 2em;
+}
+
+#cards .card {
+    width: 32%;
+}
+
+#cards .card-body i {
+    font-size: 6em;
+}
+#cards .btn-light:hover{
+    background-color: #002633;
+    color: white;
+}
