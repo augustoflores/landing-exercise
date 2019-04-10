@@ -1,3 +1,7 @@
+h1,h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header {}
 
 nav {}
@@ -51,17 +55,36 @@ header .bg-white .whitelogo {
 #cards {
     padding-top: 2em;
 }
-
+#cards span {
+    display: block;
+    color: gray;
+    margin: 28px auto;
+}
 #cards .card {
     width: 32%;
 }
 
 #cards .card-body i {
-    font-size: 6em;
+    font-size: 3em;
 }
 #cards .btn-light:hover{
     background-color: #002633;
     color: white;
+}
+.heroes {
+    color: red;
+    font-size: 1.8em;
+}
+#imagensola p {
+    margin-left: 5em;    
+}
+#imagensola i {
+
+    font-size: 1.5em;
+    width: 1.5em;
+}
+#ourstats h3 {
+    font-size: 3em;
 }
 #galeria .image{
     position: relative;
@@ -91,4 +114,21 @@ header .bg-white .whitelogo {
 footer{
     background-color: #002633;
     color: #678c78;
+}
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.5em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+h2::after {
+    content: "";
+    background-color: red;
+    display: block;
+    width: 5%;
+    margin: .5em auto 0px;
+    height: 2px;
 }
