@@ -88,3 +88,7 @@ header .bg-white .whitelogo {
         width: 100%;
         height: auto;
 }
+footer{
+    background-color: #002633;
+    color: #678c78;
+}
