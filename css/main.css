@@ -25,13 +25,16 @@ nav.navbar {
 .navbar-light a.nav-link {
     color: gray !important;
 }
-.navbar-light .navbar-toggler{
+
+.navbar-light .navbar-toggler {
     color: #002633;
 
 }
+
 .bg-black {
     background-color: black;
 }
+
 header .navbar-nav li.nav-item {
     padding: 20px;
 }
@@ -143,9 +146,7 @@ header .bg-white .whitelogo {
     padding: 10px 30px;
     margin: 10px 10px;
 }
-.carousel-item img{
-    height: 70em;
-}
+
 #ourwork .btn-danger:hover,
 #ourwork .btn-danger.active {
     background-color: red;
@@ -191,55 +192,65 @@ footer i {
     position: absolute;
     left: 10px;
 }
+
 .address {
     position: relative;
 }
+
 .line {
     margin-top: 3em;
 }
+
 .pie {
     font-size: .7em;
     padding-top: 30px;
     padding-bottom: 10px;
     border-top: #507569 thin solid;
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
     #cards .card {
         width: 100%;
     }
+
     .btn-group {
         flex-direction: column;
         width: 100%;
     }
-    .carousel-item img {
+
+    header .carousel-item img {
         height: 30em;
         object-fit: cover;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         margin: auto
     }
-  }
-  
-  /* 
+}
+
+/* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
+
+@media (min-width: 320px) and (max-width: 480px) {
+
     #cards .card {
         width: 100%;
     }
+
     .btn-group {
         flex-direction: column;
         width: 100%;
     }
-    .carousel-item img {
+
+    header .carousel-item img {
         height: 30em;
         object-fit: cover;
-         margin: auto
-    }
-    .navbar-toggler{
         margin: auto
     }
-  }
+
+    .navbar-toggler {
+        margin: auto
+    }
+}
