@@ -197,6 +197,12 @@ footer i {
 .line {
     margin-top: 3em;
 }
+.pie {
+    font-size: .7em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: #507569 thin solid;
+}
 @media (min-width: 481px) and (max-width: 767px) {
     #cards .card {
         width: 100%;
