@@ -6,9 +6,8 @@ h3,
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
 }
-
 header {}
 
 nav {}
@@ -18,7 +17,7 @@ nav.navbar {
     top: 0;
     padding: 0;
     border-bottom: rgba(255, 255, 255, .1) solid 1px;
-    z-index: 5;
+    z-index: 100;
     width: 100%;
 }
 
@@ -207,8 +206,33 @@ footer i {
     padding-bottom: 10px;
     border-top: #507569 thin solid;
 }
+#testimonials .carousel-indicators li {
+    background-color: gray!important;
+}
+div#carouselExampleIndicators2 {
+    padding-bottom: 50px;
+}
+.image{
+    overflow: hidden;
+}
+.image img {
+    transition-duration: .5s;
+}
+.image:hover img {
+    transform: scale(1.25);
+    overflow: hidden;
+}
 
-@media (min-width: 481px) and (max-width: 767px) {
+.nav-tabs {
+    display: -webkit-inline-box;
+    border-bottom: none;
+}
+
+.active {
+    display: flex!important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
     #cards .card {
         width: 100%;
     }
@@ -226,31 +250,26 @@ footer i {
     .navbar-toggler {
         margin: auto
     }
-}
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    #cards .card {
-        width: 100%;
+    nav.navbar {
+        position: unset; 
     }
-
-    .btn-group {
-        flex-direction: column;
-        width: 100%;
+    .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+        color: #000;
     }
-
-    header .carousel-item img {
-        height: 30em;
-        object-fit: cover;
-        margin: auto
+    .navbar-dark .navbar-nav .nav-link {
+        color: #444444;
     }
-
-    .navbar-toggler {
-        margin: auto
+    header .navbar-dark .whitelogo{
+        display: none;
+    }
+    header .navbar-dark .darklogo {
+        display: block;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .text-right {
+        border-top: none;
     }
 }
+
