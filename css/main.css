@@ -6,8 +6,9 @@ h3,
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
+
 header {}
 
 nav {}
@@ -91,7 +92,7 @@ header .bg-white .whitelogo {
 }
 
 .heroes {
-    color:#C81010;
+    color: #C81010;
     font-size: 1.8em;
 }
 
@@ -122,7 +123,7 @@ header .bg-white .whitelogo {
     width: 100%;
     height: 100%;
     color: white;
-    background-color:#C81010;
+    background-color: #C81010;
     opacity: 0;
     transition-duration: .5s;
     padding: 25px;
@@ -148,12 +149,12 @@ header .bg-white .whitelogo {
 
 #ourwork .btn-danger:hover,
 #ourwork .btn-danger.active {
-    background-color:#C81010;
+    background-color: #C81010;
     color: white;
 }
 
 .contact {
-    background-color:#C81010;
+    background-color: #C81010;
     color: white;
     font-size: 2em;
     padding: 20px;
@@ -176,7 +177,7 @@ h2 {
 
 h2::after {
     content: "";
-    background-color:#C81010;
+    background-color: #C81010;
     display: block;
     width: 5%;
     margin: .5em auto 0px;
@@ -185,7 +186,7 @@ h2::after {
 
 
 footer i {
-    color:#C81010;
+    color: #C81010;
     font-size: 2em;
     margin-right: .5em;
     position: absolute;
@@ -206,18 +207,23 @@ footer i {
     padding-bottom: 10px;
     border-top: #507569 thin solid;
 }
+
 #testimonials .carousel-indicators li {
-    background-color: gray!important;
+    background-color: gray !important;
 }
+
 div#carouselExampleIndicators2 {
     padding-bottom: 50px;
 }
-.image{
+
+.image {
     overflow: hidden;
 }
+
 .image img {
     transition-duration: .5s;
 }
+
 .image:hover img {
     transform: scale(1.25);
     overflow: hidden;
@@ -228,8 +234,14 @@ div#carouselExampleIndicators2 {
     border-bottom: none;
 }
 
-.active {
-    display: flex!important;
+#galeria .active {
+    display: flex !important;
+}
+
+header .carousel-item img {
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -250,26 +262,44 @@ div#carouselExampleIndicators2 {
     .navbar-toggler {
         margin: auto
     }
+
     nav.navbar {
-        position: unset; 
+        position: unset;
     }
-    .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .active>.nav-link,
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .navbar-dark .navbar-nav .show>.nav-link {
         color: #000;
     }
+
     .navbar-dark .navbar-nav .nav-link {
         color: #444444;
     }
-    header .navbar-dark .whitelogo{
+
+    header .navbar-dark .whitelogo {
         display: none;
     }
+
     header .navbar-dark .darklogo {
         display: block;
     }
+
     .navbar-dark .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
+
     .text-right {
         border-top: none;
     }
-}
 
+    ul.nav.nav-tabs {
+        display: block;
+    }
+    a.btn.btn-danger {
+        width: 100%;
+        text-align: center;
+    }
+}
